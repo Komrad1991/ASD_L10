@@ -2,6 +2,7 @@
 #include "CppUnitTest.h"
 
 #include "../ASD_L10/graph.h"
+#include "../ASD_L10/graph.cpp"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
