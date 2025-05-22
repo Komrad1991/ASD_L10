@@ -1,0 +1,19 @@
+graph MST {
+    0;
+    1;
+    2;
+    3;
+    4;
+    5;
+    6;
+    7;
+    8;
+    0 -- 1 [label=4, color=red, penwidth=2.0];
+    1 -- 2 [label=8, color=red, penwidth=2.0];
+    2 -- 3 [label=7, color=red, penwidth=2.0];
+    3 -- 4 [label=9, color=red, penwidth=2.0];
+    2 -- 5 [label=4, color=red, penwidth=2.0];
+    5 -- 6 [label=2, color=red, penwidth=2.0];
+    6 -- 7 [label=1, color=red, penwidth=2.0];
+    2 -- 8 [label=2, color=red, penwidth=2.0];
+}
