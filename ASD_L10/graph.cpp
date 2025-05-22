@@ -14,7 +14,7 @@ int primMST(const std::vector<std::vector<std::pair<int, int>>>& graph, int star
         std::greater<>> pq;
 
     key[start] = 0;
-    pq.emplace(0, start);
+    pq.push(std::make_pair(0, start));
 
     int totalWeight = 0;
 
@@ -37,7 +37,7 @@ int primMST(const std::vector<std::vector<std::pair<int, int>>>& graph, int star
             if (!inMST[v] && weight < key[v])
             {
                 key[v] = weight;
-                pq.emplace(key[v], v);
+                pq.push(std::make_pair(key[v], v));
             }
         }
     }
